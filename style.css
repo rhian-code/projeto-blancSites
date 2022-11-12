@@ -33,7 +33,10 @@ nav a{
     text-decoration: none;
     color: white;
 }
-header .btn-menu{
+.btn-menu{
+    display: none;
+}
+button{
     display: none;
 }
 .btn-menu.active{
