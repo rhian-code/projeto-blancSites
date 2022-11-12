@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins','montserrat','sans-serif';
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: #226666;
+    padding: 20px;
+    color: white;
+    
+}
+header button{display: none;}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family:'Montserrat','poppins';
+}
+.logo span{
+    font-weight: 600;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.text-login{
+    background-color: aliceblue;
+    color: #0D4D4D;
+    padding: 5px 20px;
+    border-radius: 25px;
+}
+.text-login a{
+    color: #0D4D4D;
+    font-weight: 600;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 980px;
+    background: azure;
+    background-image:  linear-gradient(to bottom, #226666 50%, #0D4D4D);
+    text-align: center;
+    color: white;
+    cursor: default;
+
+}
+main h1{
+    font-size: 4rem;
+}
+main p{
+    font-size: 1.5rem;
+}
+
+.tree-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#D9EEEE;
+    padding: 20px;
+    min-height: 300px;
+    gap: 2rem;
+    
+}
+.box{
+    background-color: #226666;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 2rem;
+    max-width: 18rem;
+    height: 13rem;
+    color: #D9EEEE;
+    font-size: 0.9rem;border-radius: 10px;
+}
+.text-wpp{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    color: #D9EEEE;
+}
+.text-wpp h1{
+    font-size: 2rem;
+}
+#list-menu{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    list-style: none;
+
+
+}
+#list-menu.active{
+    display: flex;
+}
+#list-menu li{
+    padding: 10px;
+}
+#list-menu a{
+    font-weight: 700;
+    padding: 10px 520px;
+    text-decoration: none;
+    color: #0D4D4D;
+}
+#list-menu a:hover{
+    background-color: #226666;
+    color: #D9EEEE;
+}
+.text-wpp a{
+    color: #D9EEEE;
+    text-decoration: none;
+    font-weight: 700;
+    width: 250px;
+    border: none;
+    padding: 10px 5px;
+    background-color: rgb(44, 187, 92);
+    text-align: center;
+}
+.duo-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 2rem;
+    align-items: center;
+    background: azure;
+    background-image: linear-gradient(to bottom, #226666 50%, #0D4D4D);
+    height: 700px;
+}
+.desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: 600px;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.text-work{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 500px;
+    color: #0D4D4D;
+}
+.desc img{
+    width: 100%;
+}
+.desc picture{
+    max-width: 800px ;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #226666;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer li a, footer p{
+    color: #D9EEEE;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+footer p{
+    cursor: default;
+}
+footer a:hover{
+    color: greenyellow;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (max-width:670px) {
+    .tree-box{
+        display: flex;
+        flex-direction: column;
+        height: 980px;
+    }
+   main h1{
+        font-size: 2.5rem;
+    }
+    .duo-box{
+        height: 980px;
+    }
+    main{
+        height: 1080px;
+    }
+}
+@media screen and (max-width:532px){
+    header nav{
+        display:none;
+    }
+    header button{
+        display: block;
+        border: none;
+        font-weight: 700;
+        background-color: #D9EEEE;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-family: 'Montserrat', poppins, verdana, sans-serif;
+    }
+}
+@media screen and (min-width:534px){
+    #list-menu.active{
+        display: none;
+    }
+}
+@media screen and (max-width:375px){
+    main h1{
+        font-size: 2rem;
+    }
+    main p{
+        font-size: 0.8rem;
+    }
+}
