@@ -16,7 +16,6 @@ header{
     color: white;
     
 }
-header button{display: none;}
 .logo{
     font-size: 1.5rem;
     font-weight: 100;
@@ -34,6 +33,9 @@ nav ul{
 nav a{
     text-decoration: none;
     color: white;
+}
+.btn-menu{
+    display: none;
 }
 .text-login{
     background-color: aliceblue;
@@ -212,15 +214,21 @@ a{
     header nav{
         display:none;
     }
-    header button{
+    header .btn-menu{
         display: block;
+        font-weight: 900;
+        background-color: aliceblue;
+        color: #0D4D4D;
+        padding: 5px 20px;
+        border-radius: 25px;
         border: none;
-        font-weight: 700;
-        background-color: #D9EEEE;
-        border-radius: 5px;
-        padding: 5px 10px;
         cursor: pointer;
         font-family: 'Montserrat', poppins, verdana, sans-serif;
+        color: #226666;
+    }
+    header .btn-menu:hover{
+        transition: 300ms;
+        padding: 9px 25px;
     }
 }
 @media screen and (min-width:534px){
