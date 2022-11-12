@@ -204,16 +204,19 @@ a{
         height: 980px;
     }
    main h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .duo-box{
         height: 980px;
     }
     main{
-        height: 1080px;
+        height: 750px;
     }
 }
 @media screen and (max-width:562px){
+    main {
+            height:600px;
+        }
     header nav{
         display: none;
     }
