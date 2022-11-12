@@ -36,6 +36,9 @@ nav a{
 header .btn-menu{
     display: none;
 }
+.btn-menu.active{
+    display:none
+}
 .text-login{
     background-color: aliceblue;
     color: #0D4D4D;
@@ -104,8 +107,6 @@ main p{
     align-items: center;
     text-align: left;
     list-style: none;
-
-
 }
 #list-menu.active{
     display: flex;
@@ -210,9 +211,6 @@ a{
     }
 }
 @media screen and (max-width:532px){
-    header nav{
-        display:none;
-    }
     header .btn-menu{
         display: block;
         font-weight: 900;
