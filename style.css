@@ -213,7 +213,10 @@ a{
         height: 1080px;
     }
 }
-@media screen and (max-width:532px){
+@media screen and (max-width:562px){
+    header nav{
+        display: none;
+    }
     header .btn-menu{
         display: block;
         font-weight: 900;
