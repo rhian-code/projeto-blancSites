@@ -56,7 +56,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 60px);
     padding: 30px;
     background: azure;
     background-image:  linear-gradient(to bottom, #226666 50%, #0D4D4D);
