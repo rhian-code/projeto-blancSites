@@ -56,13 +56,13 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 980px;
+    height: 100vh;
+    padding: 30px;
     background: azure;
     background-image:  linear-gradient(to bottom, #226666 50%, #0D4D4D);
     text-align: center;
     color: white;
     cursor: default;
-
 }
 main h1{
     font-size: 4rem;
@@ -146,14 +146,14 @@ main p{
     align-items: center;
     background: azure;
     background-image: linear-gradient(to bottom, #226666 50%, #0D4D4D);
-    height: 700px;
+    height: 100vh;
 }
 .desc{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
-    height: 600px;
+    height: 100vh;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
@@ -201,22 +201,23 @@ a{
     .tree-box{
         display: flex;
         flex-direction: column;
-        height: 980px;
+        height: 100vh;
+        padding: 50px 25px;
     }
    main h1{
         font-size: 2rem;
     }
-    .duo-box{
+    /* .duo-box{
         height: 700px;
-    }
-    main{
+    } */
+    /* main{
         height: 750px;
-    }
+    } */
 }
 @media screen and (max-width:562px){
-    main {
+    /* main {
             height:600px;
-        }
+        } */
     header nav{
         display: none;
     }
